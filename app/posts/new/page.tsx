@@ -1,6 +1,6 @@
-import Form from "next/form";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
+import Form from "next/form";
 import { redirect } from "next/navigation";
 
 export default function NewPost() {
@@ -14,7 +14,7 @@ export default function NewPost() {
       data: {
         title,
         content,
-        authorId: 6,
+        authorId: 1,
       },
     });
 
