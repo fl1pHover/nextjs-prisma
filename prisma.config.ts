@@ -1,4 +1,9 @@
-import "dotenv/config";
+try {
+  await import("dotenv/config");
+} catch {
+  // asdasd
+}
+
 import { defineConfig, env } from "prisma/config";
 
 export default defineConfig({
